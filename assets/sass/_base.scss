@@ -1,0 +1,7 @@
+.boxe-test {
+  background-color: lighten(#B743DA, 20%);
+}
+
+.btn-pink {
+  @include button-variant(#fff, #B743DA, #B743DA)
+}

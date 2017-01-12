@@ -1,0 +1,22 @@
+{
+  "name": "saas-example",
+  "version": "1.0.0",
+  "description": "Learn to use sass",
+  "main": "index.html",
+  "author": "Thibaut Gauvin",
+  "license": "GPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Thibaut-gauvin/sass-example.git"
+  },
+  "scripts": {
+    "gulp": "gulp",
+    "bower": "bower"
+  },
+  "dependencies": {
+    "bower": "^1.8.0",
+    "gulp": "^3.9.1",
+    "gulp-changed": "^1.3.2",
+    "gulp-sass": "^3.1.0"
+  }
+}

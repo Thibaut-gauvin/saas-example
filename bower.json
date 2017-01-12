@@ -1,0 +1,19 @@
+{
+  "name": "g4blog",
+  "version": "0.0.1",
+  "homepage": "git@github.com:Thibaut-gauvin/G4blog.git",
+  "authors": [
+    "Thibaut Gauvin     <gauvin.thibaut83@gmail.com>"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "web/vendor",
+    "components"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}
