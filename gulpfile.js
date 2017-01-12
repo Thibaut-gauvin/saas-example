@@ -6,8 +6,6 @@
 var gulp        = require('gulp');
 var sass        = require('gulp-sass');
 var changed     = require('gulp-changed');
-var imagemin    = require('gulp-imagemin');
-var svgstore    = require('gulp-svgstore');
 
 /**
  * Variable used in recipes
@@ -18,9 +16,7 @@ var config = {
     sassDest: './dist/css',
     sassOutputStyle: 'compressed',
     jsSrc: 'assets/js/**/*.js',
-    jsDest: './dist/js',
-    svgSrc: 'assets/icons/**/*.svg',
-    svgDest: './dist/icons'
+    jsDest: './dist/js'
 };
 
 gulp.task( 'default',
@@ -28,7 +24,7 @@ gulp.task( 'default',
 );
 
 gulp.task( 'build',
-    [ 'svgSprite', 'css', 'js' ]
+    [ 'css', 'js' ]
 );
 
 gulp.task( 'dist',
@@ -47,7 +43,7 @@ gulp.task( 'css', function() {
             outputStyle: config.sassOutputStyle
         }).on('error', sass.logError)
     )
-    .pipe(gulp.dest(config.sassDest))
+    .pipe(gulp.dest(config.sassDest));
 });
 
 /**
@@ -61,7 +57,7 @@ gulp.task( 'js', function() {
             config.jsSrc
         ])
         .pipe(changed(config.jsDest))
-        .pipe(gulp.dest(config.jsDest))
+        .pipe(gulp.dest(config.jsDest));
 });
 
 /**
